@@ -120,7 +120,7 @@ categoryEl.addEventListener("change", renderProducts);
 document.getElementById("checkout").addEventListener("click", () => {
   if (!cart.length) return alert("Your cart is empty.");
   // CHANGE THIS NUMBER BEFORE LAUNCHING. Include country code, no + or spaces.
-  const WHATSAPP_NUMBER = "919999999999";
+  const WHATSAPP_NUMBER = "8610566050";
 
   const lines = cart.map(i => {
     const p = products.find(p => p.id === i.id);
