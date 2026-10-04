@@ -1,3 +1,4 @@
+import carImages from "./toysho-image-data.js";
 const products = [
   { id: 1, name: "Street Racer", category: "sports", price: 299 },
   { id: 2, name: "Turbo GT", category: "sports", price: 399 },
