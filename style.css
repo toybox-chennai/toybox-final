@@ -181,3 +181,41 @@ footer { background:var(--gray); padding:50px 0; }
 .cart-thumb img {
   width: 100%; height: 100%; object-fit: cover; display: block;
 }
+/* ===== TOY IMAGE ALIGNMENT FIX ===== */
+
+.product-image {
+  height: 260px;
+  background: #f3f3f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Actual product image */
+.product-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+/* Remove the old fake-car graphics */
+.product-image::before,
+.product-image::after {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .product-image {
+    height: 260px;
+  }
+
+  .product-image img {
+    object-fit: cover;
+    object-position: center bottom;
+  }
+}
